@@ -1,0 +1,115 @@
+* {
+    font-family: sans-serif;
+    outline: none;
+}
+
+h1, h2 {color: #212121;}
+h3 {color: #777;}
+
+body {
+    margin: 0;
+    background: #F5F5F5;
+    color: #444;
+}
+
+hr {
+    margin: 32px 0;
+    border: 1px solid #E0E0E0;
+    border-radius: 1px;
+}
+
+.page {padding: 64px 16px;}
+.effect {animation: effect 1s ease-in-out;}
+
+.container {
+    margin: 0 auto 200px;
+    max-width: 600px;
+    background: #fff;
+}
+
+.practice {
+    padding: 8px;
+    background: #F5F5F5; /* Blue 700 */
+    border-left: 3px solid #1976D2;
+}
+
+.activity {
+    padding: 8px;
+    background: #F5F5F5; /* Red 700*/
+    border-left: 3px solid #D32F2F;
+}
+
+.button {
+    display: inline-block;
+    margin: 2px;
+    padding: 10px 24px;
+    min-width: 64px;
+    text-align: center;
+    text-decoration: 0;
+    font-size: 14px;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 40px;
+}
+
+.button.outline {
+    border-color: #212121;
+    color: #212121;
+    background: transparent;
+}
+
+@keyframes effect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* ################################### */
+
+.first-page {
+    padding: 240px 18px;
+    position: relative;
+}
+
+.first-page .icon-button {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    margin: 8px;
+    padding: 8px;
+    color: #000;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 0;
+    background: #245a64;
+    transition: 0.5s;
+}
+
+.nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    color: #fff;
+    text-decoration: 0;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.nav.animate {
+    height: 260px;
+}
+
+.nav.animate a {
+    opacity: 1;
+}
